@@ -192,11 +192,45 @@
 // for(let i = 11; i>=1; i-=2){
 //     console.log(`${i}`)
 // }
-// let string = [];
-// for(let i = 1; i<=5; i++){
-//     string.push(Math.floor(Math.random() * 101));
+
+// let num1 = 1;
+// let num2 = 2;
+// let num3 = 3;
+// let num4 = 4;
+// let num5 = 5;
+// for(let i =1; i<=5; i++){
+//     console.log(i);
+//     if(num1 == i){
+//         num1 =(Math.floor(Math.random() * 11));
+//     }else if(num2 = i){
+//         num2 =(Math.floor(Math.random() * 11));
+//         if(num1 != num2){
+//             continue;
+//         }else{
+//             num2 = (Math.floor(Math.random() * 11));
+//         }
+//     }else if(num3 = i){
+//         num3 = (Math.floor(Math.random() * 11));
+//         console.log("test");
+//         if((num3 != num1) && (num3 != num2)){
+//             continue;
+//         }else{
+//             num3 = (Math.floor(Math.random() * 11));
+//         }
+//     }else if(num4 = i){
+//         num4 = (Math.floor(Math.random() * 11));
+//         if(num4 = (num1 || num2 || num3)){
+//             num4 = (Math.floor(Math.random() * 11));
+//         }
+//     }else if(num5 = i){
+//         num5 = (Math.floor(Math.random() * 11));
+//         if(num5 = (num1 || num2 || num3 || num4)){
+//             num5 = (Math.floor(Math.random() * 11));
+//         }
+//     }
 // };
-// console.log(string);
+
+// console.log(`${num1} ${num2} ${num3} ${num4} ${num5}`);
 
 // let i = 0;
 // while(i < 3){ //shows 0, then 1, then 2
@@ -240,7 +274,21 @@
 // console.log(`Average: ${average}`);
 // console.log(`Grade: ${average}`);
 
-for (let i = 0; i < 50; i ++){
-    if(i %2 == 1) continue;
-    console.log(i);
-}
+// main:for (let i = 0; i < 50; i ++){
+//     if(i %2 == 1) continue main;
+//     console.log(i);
+// }
+// let i,j;
+
+// loopOuter:
+// for(i =0; i<3; i++){
+//     loopInner:
+//     for(j=0; j<3; j++){
+//         if(i == j){
+//             continue loopOuter;
+//         }else{
+//             console.log(`Our i = ${i}, Our j = ${j}`);
+//         };
+//     };
+// };
+
