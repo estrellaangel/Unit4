@@ -33,7 +33,7 @@
             let ending = [];
 
             for(let j = 0; j < letters.length; j++){
-                if((letters[j] == "b" || letters[j] == "c" || letters[j] == "d" || letters[j] == "f" || letters[j] == "g" || letters[j] == "h" || letters[j] == "j" || letters[j] == "k" || letters[j] == "l" || letters[j] == "m" || letters[j] == "n" || letters[j] == "p" || letters[j] == "q" || letters[j] == "r" || letters[j] == "s" || letters[j] == "t" || letters[j] == "v" || letters[j] == "w" || letters[i] == "x" || letters[i] == "y" || letters[i] == "z")){
+                if((letters[j] == "b" || letters[j] == "c" || letters[j] == "d" || letters[j] == "f" || letters[j] == "g" || letters[j] == "h" || letters[j] == "j" || letters[j] == "k" || letters[j] == "l" || letters[j] == "m" || letters[j] == "n" || letters[j] == "p" || letters[j] == "q" || letters[j] == "r" || letters[j] == "s" || letters[j] == "t" || letters[j] == "v" || letters[j] == "w" || letters[j] == "x" || letters[j] == "y" || letters[j] == "z")){
                     placesC.push(j);
                 }else{
                     placesV.push(j);
@@ -67,4 +67,4 @@
         console.log(newText);
     }
 
-    pigLatin(`super cool`);
+    pigLatin(`yellow`);

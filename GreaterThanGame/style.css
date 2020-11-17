@@ -1,0 +1,51 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --main-bg-color: rgb(168, 157, 216);
+    --text-color: rgb(63, 57, 90);
+    --highlight-color: rgb(233, 228, 255);
+}
+
+html{
+    background-color: var(--main-bg-color);
+}
+
+body{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 50px 50px 50px;
+    justify-content: center;
+    align-content: center;
+    color: var(--text-color);
+}
+header{
+    color: var(--highlight-color);
+    font-size: 2rem;
+    text-align: center;
+    text-emphasis: bold;
+}
+
+
+button{
+    align-content: center;
+    font-size: large;
+    padding: 1rem;
+    border-radius: 25%;
+    background-color: var(--text-color);
+    color: var(--highlight-color);
+    margin-top: 1rem;
+    margin-left: 1.8rem;
+}
+
+p{
+    margin-top: 1rem;
+    color: var(--text-color);
+    text-align: center;
+}
+
+p a{
+    color: var(--highlight-color)
+}
