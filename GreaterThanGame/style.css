@@ -1,6 +1,7 @@
 *, *::after, *::before{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 :root{
     --main-bg-color: rgb(168, 157, 216);
@@ -14,11 +15,10 @@ html{
 
 body{
     min-height: 100vh;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 50px 50px 50px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     color: var(--text-color);
 }
 header{
@@ -37,7 +37,6 @@ button{
     background-color: var(--text-color);
     color: var(--highlight-color);
     margin-top: 1rem;
-    margin-left: 1.8rem;
 }
 
 p{
