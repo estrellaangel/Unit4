@@ -1,0 +1,185 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+
+}
+
+body{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+/* Header Styling */
+header{
+    text-align: center;
+    margin: 10px;
+}
+
+/* Game Board Design */
+.game{
+    display: flex;
+    flex-wrap: wrap;
+    width: 315px;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.square{
+    height: 100px;
+    width: 100px;
+    background-color: coral;
+    border: 1px black solid;
+}
+
+/* X design */
+.O{
+    background-image: URL("pictures/ClipartKey_80958.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+}
+
+.X{
+    height: 100px;
+    width: 100px;
+    background-image: URL("pictures/candyX.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+}
+
+/* Winner Count */
+.winnerTally{
+    margin: 10px;
+    text-align: center;
+    width: 165px;
+}
+
+.Count{
+    white-space: nowrap;
+    margin: 10px;
+}
+
+/* Message */
+.noOneWins{
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    height: 130px;
+    width: 80%;
+    position: fixed;
+    background-color: white;
+    color: red;
+    border: black solid 1px;
+    left: 10%;
+    top: 200px;
+}
+
+@media (max-width: 600px){
+    *, *::after, *::before{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    :root{
+    
+    }
+    
+    body{
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    /* Header Styling */
+    header{
+        text-align: center;
+        margin: 10px;
+    }
+    
+    /* Game Board Design */
+    .game{
+        display: flex;
+        flex-wrap: wrap;
+        width: 255px;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        gap: 5px;
+    }
+    
+    .square{
+        height: 75px;
+        width: 75px;
+        background-color: coral;
+        border: 1px black solid;
+    }
+    
+    /* X design */
+    .O{
+        background-image: URL("pictures/ClipartKey_80958.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100px 100px;
+    }
+    
+    .X{
+        height: 100px;
+        width: 100px;
+        background-image: URL("pictures/candyX.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100px 100px;
+    }
+    
+    /* Winner Count */
+    .winnerTally{
+        margin: 10px;
+        text-align: center;
+        width: 165px;
+    }
+    
+    .Count{
+        white-space: nowrap;
+        margin: 10px;
+    }
+    
+    /* Message */
+    .noOneWins{
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        height: 110px;
+        width: 80%;
+        position: fixed;
+        background-color: white;
+        color: red;
+        border: black solid 1px;
+        left: 10%;
+        top: 170px;
+        display: flex;
+        text-align: center;
+    }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang='en'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<head>
+<meta charset='utf-8'>
+<meta name='author' content='Estrella Angel'>
+<meta name='description' content=''>
+<meta property='og:image' content=''>
+<meta property='og:description' content=''>
+<meta property='og:title' content=''>
+<title>Tic Tac Toe</title>
+<link rel='stylesheet' href='tictacstyle.css'>
+<link rel='shortcut icon' href='' type='image/x-icon'>
+</head>
+<body>
+    <header>
+        <h1 id="header">Tic Tac Toe</h1>
+        <h3>Player: <a id="player">X</a></h3>
+        <h3>Turn: <a id="turn">1</a></h3>
+    </header>
+
+    <section class="game">
+        <div onclick="chooseSpot(`1a`)" id="1a" class="square top L diag"></div>
+        <div onclick="chooseSpot(`1b`)" id="1b" class="square top M"></div>
+        <div onclick="chooseSpot(`1c`)" id="1c" class="square top R diagnol"></div>
+        <div onclick="chooseSpot(`2a`)" id="2a" class="square middle L"></div>
+        <div onclick="chooseSpot(`2b`)" id="2b" class="square middle M diag diagnol"></div>
+        <div onclick="chooseSpot(`2c`)" id="2c" class="square middle R"></div>
+        <div onclick="chooseSpot(`3a`)" id="3a" class="square bottom L diagnol"></div>
+        <div onclick="chooseSpot(`3b`)" id="3b" class="square bottom M"></div>
+        <div onclick="chooseSpot(`3c`)" id="3c" class="square bottom R diag"></div>
+    </section>
+    <section>
+        <div id="message" class="noOneWins">
+            No One Wins
+            <button onclick="reset()">Reset</button>
+        </div>
+    </section>
+
+    <section class="winnerTally">
+        <div>Wins</div>
+        <a class="Count" id="XWins">X Wins:   </a>
+        <a class="Count" id="YWins">O Wins:   </a>
+    </section>
+    <script src="tictacjava.js"></script>
+</body>
+</html>
