@@ -15,6 +15,16 @@ body{
     align-content: center;
     justify-items: center;
     align-items: center;
+    margin-top: 100px;
+    background-color: #fff2f2;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='250' viewBox='0 0 20 20'%3E%3Cg %3E%3Cpolygon fill='%23cc1616' points='20 10 10 0 0 0 20 20'/%3E%3Cpolygon fill='%23cc1616' points='0 10 0 20 10 20'/%3E%3C/g%3E%3C/svg%3E");
+    color: rgb(17, 148, 0);
+    color: white;
+	font-size: 20px;
+	text-shadow: -1px 1px 2px rgb(22, 131, 0),
+				1px 1px 2px rgb(22, 131, 0),
+				1px -1px 0 rgb(22, 131, 0),
+				-1px -1px 0 rgb(22, 131, 0);
 }
 
 /* Header Styling */
@@ -38,13 +48,13 @@ header{
 .square{
     height: 100px;
     width: 100px;
-    background-color: coral;
+    background-color: rgb(17, 148, 0);
     border: 1px black solid;
 }
 
-/* X design */
+/* XO design */
 .O{
-    background-image: URL("pictures/ClipartKey_80958.png");
+    background-image: URL("pictures/wreath.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100px 100px;
@@ -61,17 +71,24 @@ header{
 
 /* Winner Count */
 .winnerTally{
-    margin: 10px;
     text-align: center;
-    width: 165px;
+    margin: 10px;
 }
 
 .Count{
     white-space: nowrap;
-    margin: 10px;
 }
 
 /* Message */
+
+section a{
+    margin: 5px;
+}
+
+.message{
+    display: none;
+}
+
 .noOneWins{
     grid-template-rows: auto;
     grid-template-columns: auto;
@@ -79,15 +96,64 @@ header{
     align-content: center;
     justify-items: center;
     align-items: center;
-    height: 130px;
-    width: 80%;
+    height: 110px;
+    width: 50%;
     position: fixed;
     background-color: white;
     color: red;
     border: black solid 1px;
-    left: 10%;
-    top: 200px;
+    left: 25%;
+    top: 170px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-shadow: none;
 }
+
+button#button{
+    padding: 5px;
+    background-color: red;
+    border: transparent;
+    color: white;
+    margin: 10px;
+}
+
+.win{
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    height: 130px;
+    width: 70%;
+    position: fixed;
+    background-color: white;
+    color: red;
+    border: black solid 1px;
+    left: 15%;
+    top: 30%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-shadow: none;
+}
+
+.win button.display{
+    padding: 5px;
+    background-color: red;
+    border: transparent;
+    color: white;
+}
+
+button#themeButton{
+    padding: 15px;
+    background-color: #FFF2F2;
+    border: solid black 2px;
+    color: black;
+    border-radius: 50%;
+}
+
 
 @media (max-width: 600px){
     *, *::after, *::before{
@@ -107,6 +173,16 @@ header{
         align-content: center;
         justify-items: center;
         align-items: center;
+        margin-top: 100px;
+        background-color: #fff2f2;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='250' viewBox='0 0 20 20'%3E%3Cg %3E%3Cpolygon fill='%23cc1616' points='20 10 10 0 0 0 20 20'/%3E%3Cpolygon fill='%23cc1616' points='0 10 0 20 10 20'/%3E%3C/g%3E%3C/svg%3E");
+        color: white;
+        outline: black;
+        font-size: 15px;
+        text-shadow: -1px 1px 2px rgb(22, 131, 0),
+                    1px 1px 2px rgb(22, 131, 0),
+                    1px -1px 0 rgb(22, 131, 0),
+                    -1px -1px 0 rgb(22, 131, 0);
     }
     
     /* Header Styling */
@@ -130,40 +206,42 @@ header{
     .square{
         height: 75px;
         width: 75px;
-        background-color: coral;
+        background-color: rgb(17, 148, 0);
         border: 1px black solid;
     }
     
     /* X design */
     .O{
-        background-image: URL("pictures/ClipartKey_80958.png");
+        background-image: URL("pictures/wreath.png");
         background-position: center;
         background-repeat: no-repeat;
-        background-size: 100px 100px;
+        background-size: 75px 75px;
     }
     
     .X{
-        height: 100px;
-        width: 100px;
+        height: 75px;
+        width: 75px;
         background-image: URL("pictures/candyX.png");
         background-position: center;
         background-repeat: no-repeat;
-        background-size: 100px 100px;
+        background-size: 75px 75px;
     }
     
     /* Winner Count */
     .winnerTally{
-        margin: 10px;
         text-align: center;
-        width: 165px;
+        margin: 10px;
     }
     
     .Count{
         white-space: nowrap;
-        margin: 10px;
     }
     
     /* Message */
+    .message{
+        display: none;
+    }
+
     .noOneWins{
         grid-template-rows: auto;
         grid-template-columns: auto;
@@ -181,5 +259,47 @@ header{
         top: 170px;
         display: flex;
         text-align: center;
+        text-shadow: none;
+    }
+
+    button#button{
+        padding: 5px;
+        background-color: red;
+        border: transparent;
+        color: white;
+        margin: 10px;
+    }
+
+    .win{
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    height: 130px;
+    width: 80%;
+    position: fixed;
+    background-color: white;
+    color: red;
+    border: black solid 1px;
+    left: 10%;
+    top: 200px;
+    text-shadow: none;
+    }
+
+    .win button.display{
+        padding: 5px;
+        background-color: red;
+        border: transparent;
+        color: white;
+    }
+
+    button#themeButton{
+        padding: 5px;
+        background-color: #FFF2F2;
+        border: solid black 2px;
+        color: black;
+        border-radius: 50%;
     }
 }

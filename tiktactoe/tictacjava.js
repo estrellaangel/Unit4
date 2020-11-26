@@ -9,16 +9,20 @@ let xWins = 0;
 let oWins = 0;
 
 
+document.getElementById("button").onclick = function(){
+    reset();
+}
+
 let chooseSpot = function(spot){
-    
+    if(document.getElementById(spot).classList.contains(`X`)){
+        return;
+    }
+    if(document.getElementById(spot).classList.contains(`O`)){
+        return;
+    }
     document.getElementById(spot).classList.add(sign);
-    console.log(spot);
-    console.log(sign);
     checkWin();
     switchPlayer();
-    if((turn == 1)&&(count == 5)){
-        noOneWins();
-    }
 }
 
 let switchPlayer = () => {
@@ -32,8 +36,6 @@ let switchPlayer = () => {
     }
     document.getElementById(`player`).textContent = sign;
     document.getElementById(`turn`).textContent = count;
-    console.log(sign);
-    console.log(count);
 };
 
 let checkWin = function(){
@@ -52,7 +54,6 @@ let checkWin = function(){
             L++;
             if(elemList.classList.contains(`top`)){
                 DL++;
-                console.log(`hereeeee`)
             }else if(elemList.classList.contains(`bottom`)){
                 DR++;
             };
@@ -69,32 +70,59 @@ let checkWin = function(){
             }else if(elemList.classList.contains(`bottom`)){
                 DL++;
             };
-        }else if(elemList.classList.contains(`top`)){
+        }if(elemList.classList.contains(`top`)){
             top++;
         }else if(elemList.classList.contains(`middle`)){
             middle++;
         }else if(elemList.classList.contains(`bottom`)){
             bottom++;
         }
-        console.log(`DL is ${DL}`);
         }
     if((L == 3)||(M == 3)||(R == 3)||(top == 3)||(middle == 3)||(bottom == 3)||(DL == 3)||(DR == 3)){
         win();
+    }else if((turn == 0)&&(count == 5)){
+        noOneWins();
     };
 };
 
 let win = () => {
-    document.getElementById("header").textContent = `${sign} WINNNS`;
     if(turn == 0){
         xWins++;
         document.getElementById("XWins").textContent = `X Wins: ${xWins}`;
     }else{
         oWins++;
-        document.getElementById("YWins").textContent = `O Wins: ${oWins}`;
+        document.getElementById("OWins").textContent = `O Wins: ${oWins}`;
     }
+    document.getElementById(`textmessage`).textContent = `${sign} WINS !`
+    document.getElementById(`message`).classList.add(`win`);
+    document.getElementById(`message`).classList.remove(`message`);
+    document.getElementById("button").textContent = "Play Again";
 };
 
 let noOneWins = () => {
-    document.getElementById(`message`).textContent = `No one wins`;
+    document.getElementById(`textmessage`).textContent = "No one wins";
     document.getElementById(`message`).classList.add(`noOneWins`);
+    document.getElementById("button").textContent = "Reset";
+}
+
+function reset(){
+    turn = 0;
+    count = 1;
+    sign = "X";
+    let positions = [`1a`, `1b`, `1c`, `2a`, `2b`, `2c`, `3a`, `3b`, `3c`]
+
+    for(let item = 0; item <positions.length; item++){
+        document.getElementById(positions[item]).classList.remove(`X`);
+        document.getElementById(positions[item]).classList.remove(`O`);
+    }
+    console.log(`something`)
+
+    document.getElementById(`turn`).textContent = "1";
+    document.getElementById(`player`).textContent = "X";
+    document.getElementById("message").classList.remove("win");
+    document.getElementById("message").classList.remove("noOneWins");
+    document.getElementById("textmessage").classList.remove("noOneWins");
+    document.getElementById("textmessage").classList.remove("win");
+    document.getElementById(`message`).classList.add(`message`);
+
 }
