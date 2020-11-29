@@ -16,29 +16,20 @@ body{
     justify-items: center;
     align-items: center;
     margin-top: 100px;
-    background-color: #fff2f2;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='250' viewBox='0 0 20 20'%3E%3Cg %3E%3Cpolygon fill='%23cc1616' points='20 10 10 0 0 0 20 20'/%3E%3Cpolygon fill='%23cc1616' points='0 10 0 20 10 20'/%3E%3C/g%3E%3C/svg%3E");
-    color: rgb(17, 148, 0);
-    color: white;
+    background-color: #ffccf9;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='90' viewBox='0 0 90 90'%3E%3Ccircle fill='%23d1f3ff' cx='45' cy='45' r='10'/%3E%3Cg fill='%23dbbdff' fill-opacity='1'%3E%3Ccircle cx='0' cy='90' r='10'/%3E%3Ccircle cx='90' cy='90' r='10'/%3E%3Ccircle cx='90' cy='0' r='10'/%3E%3Ccircle cx='0' cy='0' r='10'/%3E%3C/g%3E%3C/svg%3E");    color: rgb(253, 255, 144);
+    color: whitesmoke;
 	font-size: 20px;
-	text-shadow: -1px 1px 2px rgb(22, 131, 0),
-				1px 1px 2px rgb(22, 131, 0),
-				1px -1px 0 rgb(22, 131, 0),
-				-1px -1px 0 rgb(22, 131, 0);
+	text-shadow: -1px 1px 2px rgb(169, 147, 229),
+				1px 1px 2px rgb(169, 147, 229),
+				1px -1px 0 rgb(169, 147, 229),
+				-1px -1px 0 rgb(169, 147, 229);
 }
 
 /* Header Styling */
 header{
     text-align: center;
     margin: 10px;
-}
-
-#bigH{
-    font-size: 50px;
-}
-
-#header{
-    font-size: 30px;
 }
 
 /* Game Board Design */
@@ -56,13 +47,13 @@ header{
 .square{
     height: 100px;
     width: 100px;
-    background-color: rgb(17, 148, 0);
+    background-color: rgb(253, 255, 144);
     border: 1px black solid;
 }
 
 /* XO design */
 .O{
-    background-image: URL("pictures/wreath.png");
+    background-image: URL("pictures/egggs.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100px 100px;
@@ -71,7 +62,7 @@ header{
 .X{
     height: 100px;
     width: 100px;
-    background-image: URL("pictures/candyX.png");
+    background-image: URL("pictures/bunny.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100px 100px;
@@ -108,7 +99,7 @@ section a{
     width: 50%;
     position: fixed;
     background-color: white;
-    color: red;
+    color: #ffccf9;
     border: black solid 1px;
     left: 25%;
     top: 170px;
@@ -120,7 +111,7 @@ section a{
 
 button#button{
     padding: 5px;
-    background-color: red;
+    background-color: #ffccf9;
     border: transparent;
     color: white;
     margin: 10px;
@@ -137,7 +128,7 @@ button#button{
     width: 70%;
     position: fixed;
     background-color: white;
-    color: red;
+    color: #ffccf9;
     border: black solid 1px;
     left: 15%;
     top: 30%;
@@ -146,6 +137,7 @@ button#button{
     text-align: center;
     text-shadow: none;
 }
+
 
 a#themeButton{
     padding: 10px;
@@ -177,15 +169,14 @@ a#themeButton{
         justify-items: center;
         align-items: center;
         margin-top: 100px;
-        background-color: #fff2f2;
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='250' viewBox='0 0 20 20'%3E%3Cg %3E%3Cpolygon fill='%23cc1616' points='20 10 10 0 0 0 20 20'/%3E%3Cpolygon fill='%23cc1616' points='0 10 0 20 10 20'/%3E%3C/g%3E%3C/svg%3E");
-        color: white;
-        outline: black;
+        background-color: #ffccf9;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='90' viewBox='0 0 90 90'%3E%3Ccircle fill='%23d1f3ff' cx='45' cy='45' r='10'/%3E%3Cg fill='%23dbbdff' fill-opacity='1'%3E%3Ccircle cx='0' cy='90' r='10'/%3E%3Ccircle cx='90' cy='90' r='10'/%3E%3Ccircle cx='90' cy='0' r='10'/%3E%3Ccircle cx='0' cy='0' r='10'/%3E%3C/g%3E%3C/svg%3E");        color: rgb(0, 0, 0);
         font-size: 15px;
-        text-shadow: -1px 1px 2px rgb(22, 131, 0),
-                    1px 1px 2px rgb(22, 131, 0),
-                    1px -1px 0 rgb(22, 131, 0),
-                    -1px -1px 0 rgb(22, 131, 0);
+        text-shadow: -1px 1px 2px rgb(169, 147, 229),
+                    1px 1px 2px rgb(169, 147, 229),
+                    1px -1px 0 rgb(169, 147, 229),
+                    -1px -1px 0 rgb(169, 147, 229);
+        color: white;
     }
     
     /* Header Styling */
@@ -217,13 +208,13 @@ a#themeButton{
     .square{
         height: 75px;
         width: 75px;
-        background-color: rgb(17, 148, 0);
+        background-color: rgb(253, 255, 144);
         border: 1px black solid;
     }
     
     /* X design */
     .O{
-        background-image: URL("pictures/wreath.png");
+        background-image: URL("pictures/egggs.png");
         background-position: center;
         background-repeat: no-repeat;
         background-size: 75px 75px;
@@ -232,7 +223,7 @@ a#themeButton{
     .X{
         height: 75px;
         width: 75px;
-        background-image: URL("pictures/candyX.png");
+        background-image: URL("pictures/bunny.png");
         background-position: center;
         background-repeat: no-repeat;
         background-size: 75px 75px;
@@ -264,7 +255,7 @@ a#themeButton{
         width: 80%;
         position: fixed;
         background-color: white;
-        color: red;
+        color: #ffccf9;
         border: black solid 1px;
         left: 10%;
         top: 170px;
@@ -275,7 +266,7 @@ a#themeButton{
 
     button#button{
         padding: 5px;
-        background-color: red;
+        background-color: #ffccf9;
         border: transparent;
         color: white;
         margin: 10px;
@@ -292,7 +283,7 @@ a#themeButton{
     width: 80%;
     position: fixed;
     background-color: white;
-    color: red;
+    color: #ffccf9;
     border: black solid 1px;
     left: 10%;
     top: 200px;

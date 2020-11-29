@@ -1,0 +1,316 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+
+}
+
+body{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-top: 100px;
+    background-color: #ff741e;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100 60'%3E%3Cg %3E%3Crect fill='%23ff741e' width='11' height='11'/%3E%3Crect fill='%23fe741e' x='10' width='11' height='11'/%3E%3Crect fill='%23fc731e' y='10' width='11' height='11'/%3E%3Crect fill='%23fb731e' x='20' width='11' height='11'/%3E%3Crect fill='%23fa731e' x='10' y='10' width='11' height='11'/%3E%3Crect fill='%23f8721f' y='20' width='11' height='11'/%3E%3Crect fill='%23f7721f' x='30' width='11' height='11'/%3E%3Crect fill='%23f6721f' x='20' y='10' width='11' height='11'/%3E%3Crect fill='%23f5711f' x='10' y='20' width='11' height='11'/%3E%3Crect fill='%23f3711f' y='30' width='11' height='11'/%3E%3Crect fill='%23f2711f' x='40' width='11' height='11'/%3E%3Crect fill='%23f1701f' x='30' y='10' width='11' height='11'/%3E%3Crect fill='%23ef701f' x='20' y='20' width='11' height='11'/%3E%3Crect fill='%23ee701f' x='10' y='30' width='11' height='11'/%3E%3Crect fill='%23ed6f1f' y='40' width='11' height='11'/%3E%3Crect fill='%23ec6f20' x='50' width='11' height='11'/%3E%3Crect fill='%23ea6f20' x='40' y='10' width='11' height='11'/%3E%3Crect fill='%23e96e20' x='30' y='20' width='11' height='11'/%3E%3Crect fill='%23e86e20' x='20' y='30' width='11' height='11'/%3E%3Crect fill='%23e66e20' x='10' y='40' width='11' height='11'/%3E%3Crect fill='%23e56d20' y='50' width='11' height='11'/%3E%3Crect fill='%23e46d20' x='60' width='11' height='11'/%3E%3Crect fill='%23e36d20' x='50' y='10' width='11' height='11'/%3E%3Crect fill='%23e16c20' x='40' y='20' width='11' height='11'/%3E%3Crect fill='%23e06c21' x='30' y='30' width='11' height='11'/%3E%3Crect fill='%23df6c21' x='20' y='40' width='11' height='11'/%3E%3Crect fill='%23de6b21' x='10' y='50' width='11' height='11'/%3E%3Crect fill='%23dc6b21' x='70' width='11' height='11'/%3E%3Crect fill='%23db6a21' x='60' y='10' width='11' height='11'/%3E%3Crect fill='%23da6a21' x='50' y='20' width='11' height='11'/%3E%3Crect fill='%23d96a21' x='40' y='30' width='11' height='11'/%3E%3Crect fill='%23d76921' x='30' y='40' width='11' height='11'/%3E%3Crect fill='%23d66921' x='20' y='50' width='11' height='11'/%3E%3Crect fill='%23d56921' x='80' width='11' height='11'/%3E%3Crect fill='%23d46822' x='70' y='10' width='11' height='11'/%3E%3Crect fill='%23d26822' x='60' y='20' width='11' height='11'/%3E%3Crect fill='%23d16822' x='50' y='30' width='11' height='11'/%3E%3Crect fill='%23d06722' x='40' y='40' width='11' height='11'/%3E%3Crect fill='%23cf6722' x='30' y='50' width='11' height='11'/%3E%3Crect fill='%23cd6622' x='90' width='11' height='11'/%3E%3Crect fill='%23cc6622' x='80' y='10' width='11' height='11'/%3E%3Crect fill='%23cb6622' x='70' y='20' width='11' height='11'/%3E%3Crect fill='%23ca6522' x='60' y='30' width='11' height='11'/%3E%3Crect fill='%23c86522' x='50' y='40' width='11' height='11'/%3E%3Crect fill='%23c76523' x='40' y='50' width='11' height='11'/%3E%3Crect fill='%23c66423' x='90' y='10' width='11' height='11'/%3E%3Crect fill='%23c56423' x='80' y='20' width='11' height='11'/%3E%3Crect fill='%23c46423' x='70' y='30' width='11' height='11'/%3E%3Crect fill='%23c26323' x='60' y='40' width='11' height='11'/%3E%3Crect fill='%23c16323' x='50' y='50' width='11' height='11'/%3E%3Crect fill='%23c06223' x='90' y='20' width='11' height='11'/%3E%3Crect fill='%23bf6223' x='80' y='30' width='11' height='11'/%3E%3Crect fill='%23bd6223' x='70' y='40' width='11' height='11'/%3E%3Crect fill='%23bc6123' x='60' y='50' width='11' height='11'/%3E%3Crect fill='%23bb6124' x='90' y='30' width='11' height='11'/%3E%3Crect fill='%23ba6124' x='80' y='40' width='11' height='11'/%3E%3Crect fill='%23b96024' x='70' y='50' width='11' height='11'/%3E%3Crect fill='%23b76024' x='90' y='40' width='11' height='11'/%3E%3Crect fill='%23b65f24' x='80' y='50' width='11' height='11'/%3E%3Crect fill='%23b55f24' x='90' y='50' width='11' height='11'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    color: rgb(165, 51, 51);
+    color: white;
+	font-size: 20px;
+	text-shadow: -1px 1px 2px rgb(165, 51, 51),
+				1px 1px 2px rgb(165, 51, 51),
+				1px -1px 0 rgb(165, 51, 51),
+				-1px -1px 0 rgb(165, 51, 51);
+}
+
+/* Header Styling */
+header{
+    text-align: center;
+    margin: 10px;
+}
+#bigH{
+    font-size: 50px;
+}
+
+#header{
+    font-size: 30px;
+}
+
+
+
+/* Game Board Design */
+.game{
+    display: flex;
+    flex-wrap: wrap;
+    width: 315px;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.square{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(165, 51, 51);
+    border: 1px black solid;
+}
+
+/* XO design */
+.O{
+    background-image: URL("pictures/580b57fcd9996e24bc43c42e.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+}
+
+.X{
+    height: 100px;
+    width: 100px;
+    background-image: URL("pictures/pngwing.com.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+}
+
+/* Winner Count */
+.winnerTally{
+    text-align: center;
+    margin: 10px;
+}
+
+.Count{
+    white-space: nowrap;
+}
+
+/* Message */
+
+section a{
+    margin: 5px;
+}
+
+.message{
+    display: none;
+}
+
+.noOneWins{
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    height: 110px;
+    width: 50%;
+    position: fixed;
+    background-color: white;
+    color: rgb(165, 51, 51);
+    border: black solid 1px;
+    left: 25%;
+    top: 170px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-shadow: none;
+}
+
+button#button{
+    padding: 5px;
+    background-color: rgb(165, 51, 51);
+    border: transparent;
+    color: white;
+    margin: 10px;
+}
+
+.win{
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    height: 130px;
+    width: 70%;
+    position: fixed;
+    background-color: white;
+    color: rgb(165, 51, 51);
+    border: black solid 1px;
+    left: 15%;
+    top: 30%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-shadow: none;
+}
+
+a#themeButton{
+    padding: 10px;
+    background-color: #FFF2F2;
+    border: solid black 2px;
+    color: black;
+    border-radius: 50%;
+    text-shadow: none;
+    text-decoration: none;
+}
+
+
+@media (max-width: 600px){
+    *, *::after, *::before{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    :root{
+    
+    }
+    
+    body{
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        margin-top: 100px;
+        background-color: #ff741e;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100 60'%3E%3Cg %3E%3Crect fill='%23ff741e' width='11' height='11'/%3E%3Crect fill='%23fe741e' x='10' width='11' height='11'/%3E%3Crect fill='%23fc731e' y='10' width='11' height='11'/%3E%3Crect fill='%23fb731e' x='20' width='11' height='11'/%3E%3Crect fill='%23fa731e' x='10' y='10' width='11' height='11'/%3E%3Crect fill='%23f8721f' y='20' width='11' height='11'/%3E%3Crect fill='%23f7721f' x='30' width='11' height='11'/%3E%3Crect fill='%23f6721f' x='20' y='10' width='11' height='11'/%3E%3Crect fill='%23f5711f' x='10' y='20' width='11' height='11'/%3E%3Crect fill='%23f3711f' y='30' width='11' height='11'/%3E%3Crect fill='%23f2711f' x='40' width='11' height='11'/%3E%3Crect fill='%23f1701f' x='30' y='10' width='11' height='11'/%3E%3Crect fill='%23ef701f' x='20' y='20' width='11' height='11'/%3E%3Crect fill='%23ee701f' x='10' y='30' width='11' height='11'/%3E%3Crect fill='%23ed6f1f' y='40' width='11' height='11'/%3E%3Crect fill='%23ec6f20' x='50' width='11' height='11'/%3E%3Crect fill='%23ea6f20' x='40' y='10' width='11' height='11'/%3E%3Crect fill='%23e96e20' x='30' y='20' width='11' height='11'/%3E%3Crect fill='%23e86e20' x='20' y='30' width='11' height='11'/%3E%3Crect fill='%23e66e20' x='10' y='40' width='11' height='11'/%3E%3Crect fill='%23e56d20' y='50' width='11' height='11'/%3E%3Crect fill='%23e46d20' x='60' width='11' height='11'/%3E%3Crect fill='%23e36d20' x='50' y='10' width='11' height='11'/%3E%3Crect fill='%23e16c20' x='40' y='20' width='11' height='11'/%3E%3Crect fill='%23e06c21' x='30' y='30' width='11' height='11'/%3E%3Crect fill='%23df6c21' x='20' y='40' width='11' height='11'/%3E%3Crect fill='%23de6b21' x='10' y='50' width='11' height='11'/%3E%3Crect fill='%23dc6b21' x='70' width='11' height='11'/%3E%3Crect fill='%23db6a21' x='60' y='10' width='11' height='11'/%3E%3Crect fill='%23da6a21' x='50' y='20' width='11' height='11'/%3E%3Crect fill='%23d96a21' x='40' y='30' width='11' height='11'/%3E%3Crect fill='%23d76921' x='30' y='40' width='11' height='11'/%3E%3Crect fill='%23d66921' x='20' y='50' width='11' height='11'/%3E%3Crect fill='%23d56921' x='80' width='11' height='11'/%3E%3Crect fill='%23d46822' x='70' y='10' width='11' height='11'/%3E%3Crect fill='%23d26822' x='60' y='20' width='11' height='11'/%3E%3Crect fill='%23d16822' x='50' y='30' width='11' height='11'/%3E%3Crect fill='%23d06722' x='40' y='40' width='11' height='11'/%3E%3Crect fill='%23cf6722' x='30' y='50' width='11' height='11'/%3E%3Crect fill='%23cd6622' x='90' width='11' height='11'/%3E%3Crect fill='%23cc6622' x='80' y='10' width='11' height='11'/%3E%3Crect fill='%23cb6622' x='70' y='20' width='11' height='11'/%3E%3Crect fill='%23ca6522' x='60' y='30' width='11' height='11'/%3E%3Crect fill='%23c86522' x='50' y='40' width='11' height='11'/%3E%3Crect fill='%23c76523' x='40' y='50' width='11' height='11'/%3E%3Crect fill='%23c66423' x='90' y='10' width='11' height='11'/%3E%3Crect fill='%23c56423' x='80' y='20' width='11' height='11'/%3E%3Crect fill='%23c46423' x='70' y='30' width='11' height='11'/%3E%3Crect fill='%23c26323' x='60' y='40' width='11' height='11'/%3E%3Crect fill='%23c16323' x='50' y='50' width='11' height='11'/%3E%3Crect fill='%23c06223' x='90' y='20' width='11' height='11'/%3E%3Crect fill='%23bf6223' x='80' y='30' width='11' height='11'/%3E%3Crect fill='%23bd6223' x='70' y='40' width='11' height='11'/%3E%3Crect fill='%23bc6123' x='60' y='50' width='11' height='11'/%3E%3Crect fill='%23bb6124' x='90' y='30' width='11' height='11'/%3E%3Crect fill='%23ba6124' x='80' y='40' width='11' height='11'/%3E%3Crect fill='%23b96024' x='70' y='50' width='11' height='11'/%3E%3Crect fill='%23b76024' x='90' y='40' width='11' height='11'/%3E%3Crect fill='%23b65f24' x='80' y='50' width='11' height='11'/%3E%3Crect fill='%23b55f24' x='90' y='50' width='11' height='11'/%3E%3C/g%3E%3C/svg%3E");
+        background-attachment: fixed;
+        background-size: cover;        
+        color: white;
+        outline: black;
+        font-size: 15px;
+        text-shadow: -1px 1px 2px rgb(165, 51, 51),
+                    1px 1px 2px rgb(165, 51, 51),
+                    1px -1px 0 rgb(165, 51, 51),
+                    -1px -1px 0 rgb(165, 51, 51);
+    }
+    
+    /* Header Styling */
+    header{
+        text-align: center;
+        margin: 10px;
+    }
+
+    #bigH{
+        font-size: 50px;
+    }
+    
+    #header{
+        font-size: 30px;
+    }
+    
+    /* Game Board Design */
+    .game{
+        display: flex;
+        flex-wrap: wrap;
+        width: 255px;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        gap: 5px;
+    }
+    
+    .square{
+        height: 75px;
+        width: 75px;
+        background-color: rgb(165, 51, 51);
+        border: 1px black solid;
+    }
+    
+    /* X design */
+    .O{
+        background-image: URL("pictures/580b57fcd9996e24bc43c42e.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 75px 75px;
+    }
+    
+    .X{
+        height: 75px;
+        width: 75px;
+        background-image: URL("pictures/pngwing.com.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 75px 75px;
+    }
+    
+    /* Winner Count */
+    .winnerTally{
+        text-align: center;
+        margin: 10px;
+    }
+    
+    .Count{
+        white-space: nowrap;
+    }
+    
+    /* Message */
+    .message{
+        display: none;
+    }
+
+    .noOneWins{
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        height: 110px;
+        width: 80%;
+        position: fixed;
+        background-color: white;
+        color: rgb(165, 51, 51);
+        border: black solid 1px;
+        left: 10%;
+        top: 170px;
+        display: flex;
+        text-align: center;
+        text-shadow: none;
+    }
+
+    button#button{
+        padding: 5px;
+        background-color: rgb(165, 51, 51);
+        border: transparent;
+        color: white;
+        margin: 10px;
+    }
+
+    .win{
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    height: 130px;
+    width: 80%;
+    position: fixed;
+    background-color: white;
+    color: rgb(165, 51, 51);
+    border: black solid 1px;
+    left: 10%;
+    top: 200px;
+    text-shadow: none;
+    }
+
+    a#themeButton{
+        padding: 10px;
+        background-color: #FFF2F2;
+        border: solid black 2px;
+        color: black;
+        border-radius: 50%;
+        text-shadow: none;
+        text-decoration: none;
+    }
+}
