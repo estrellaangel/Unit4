@@ -9,15 +9,16 @@ let xWins = 0;
 let oWins = 0;
 
 
-document.getElementById("button").onclick = function(){
+
+document.getElementById("button").onclick = function () {
     reset();
 }
 
-let chooseSpot = function(spot){
-    if(document.getElementById(spot).classList.contains(`X`)){
+let chooseSpot = function (spot) {
+    if (document.getElementById(spot).classList.contains(`X`)) {
         return;
     }
-    if(document.getElementById(spot).classList.contains(`O`)){
+    if (document.getElementById(spot).classList.contains(`O`)) {
         return;
     }
     document.getElementById(spot).classList.add(sign);
@@ -26,10 +27,10 @@ let chooseSpot = function(spot){
 }
 
 let switchPlayer = () => {
-    if(turn == 0){
+    if (turn == 0) {
         sign = "O";
         turn++;
-    }else{
+    } else {
         sign = "X";
         turn--;
         count++;
@@ -38,7 +39,7 @@ let switchPlayer = () => {
     document.getElementById(`turn`).textContent = count;
 };
 
-let checkWin = function(){
+let checkWin = function () {
     let elemFullList = document.getElementsByClassName(sign);
     let L = 0;
     let M = 0;
@@ -48,48 +49,59 @@ let checkWin = function(){
     let bottom = 0;
     let DL = 0;
     let DR = 0;
-    for(let i = 0; i<elemFullList.length; i++){
+    for (let i = 0; i < elemFullList.length; i++) {
         let elemList = elemFullList[i];
-        if(elemList.classList.contains(`L`)){
+        if (elemList.classList.contains(`L`)) {
             L++;
-            if(elemList.classList.contains(`top`)){
+            if (elemList.classList.contains(`top`)) {
                 DL++;
-            }else if(elemList.classList.contains(`bottom`)){
+            } else if (elemList.classList.contains(`bottom`)) {
                 DR++;
             };
-        }else if(elemList.classList.contains(`M`)){
+        } else if (elemList.classList.contains(`M`)) {
             M++;
-            if(elemList.classList.contains(`middle`)){
+            if (elemList.classList.contains(`middle`)) {
                 DL++;
                 DR++;
             };
-        }else if(elemList.classList.contains(`R`)){
+        } else if (elemList.classList.contains(`R`)) {
             R++;
-            if(elemList.classList.contains(`top`)){
+            if (elemList.classList.contains(`top`)) {
                 DR++;
-            }else if(elemList.classList.contains(`bottom`)){
+            } else if (elemList.classList.contains(`bottom`)) {
                 DL++;
             };
-        }if(elemList.classList.contains(`top`)){
+        } if (elemList.classList.contains(`top`)) {
             top++;
-        }else if(elemList.classList.contains(`middle`)){
+        } else if (elemList.classList.contains(`middle`)) {
             middle++;
-        }else if(elemList.classList.contains(`bottom`)){
+        } else if (elemList.classList.contains(`bottom`)) {
             bottom++;
         }
-        }
-    if((L == 3)||(M == 3)||(R == 3)||(top == 3)||(middle == 3)||(bottom == 3)||(DL == 3)||(DR == 3)){
+    }
+    let spots = [L, M, R, top, middle, bottom, DL, DR];
+    for (let i = 0; i < spots.length; i++) {
+        if (spots[i] == 3) {
+                let spotList = document.getElementsByClassName(spots[i]);
+                for (let j = 0; j < spotList.length; j++) {
+                    spotList[i].classList.add(`winnerRowColor`)
+                    console.log(spotList[i]);
+                }
+            }
+    };
+    if ((L == 3) || (M == 3) || (R == 3) || (top == 3) || (middle == 3) || (bottom == 3) || (DL == 3) || (DR == 3)) {
         win();
-    }else if((turn == 0)&&(count == 5)){
+    } else if ((turn == 0) && (count == 5)) {
         noOneWins();
     };
+
 };
 
 let win = () => {
-    if(turn == 0){
+    if (turn == 0) {
         xWins++;
         document.getElementById("XWins").textContent = `X Wins: ${xWins}`;
-    }else{
+    } else {
         oWins++;
         document.getElementById("OWins").textContent = `O Wins: ${oWins}`;
     }
@@ -105,13 +117,13 @@ let noOneWins = () => {
     document.getElementById("button").textContent = "Reset";
 }
 
-function reset(){
+function reset() {
     turn = 0;
     count = 1;
     sign = "X";
     let positions = [`1a`, `1b`, `1c`, `2a`, `2b`, `2c`, `3a`, `3b`, `3c`]
 
-    for(let item = 0; item <positions.length; item++){
+    for (let item = 0; item < positions.length; item++) {
         document.getElementById(positions[item]).classList.remove(`X`);
         document.getElementById(positions[item]).classList.remove(`O`);
     }

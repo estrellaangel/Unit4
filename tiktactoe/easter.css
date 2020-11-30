@@ -102,7 +102,7 @@ section a{
     color: #ffccf9;
     border: black solid 1px;
     left: 25%;
-    top: 170px;
+    top: 40%;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -131,7 +131,7 @@ button#button{
     color: #ffccf9;
     border: black solid 1px;
     left: 15%;
-    top: 30%;
+    top: 40%;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -258,7 +258,7 @@ a#themeButton{
         color: #ffccf9;
         border: black solid 1px;
         left: 10%;
-        top: 170px;
+        top: 40%;
         display: flex;
         text-align: center;
         text-shadow: none;
@@ -286,7 +286,7 @@ a#themeButton{
     color: #ffccf9;
     border: black solid 1px;
     left: 10%;
-    top: 200px;
+    top: 40%;
     text-shadow: none;
     }
 
