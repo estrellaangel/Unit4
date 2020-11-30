@@ -8,6 +8,7 @@ let turnO = 1;
 let xWins = 0;
 let oWins = 0;
 
+let winningRow = [];
 
 
 document.getElementById("button").onclick = function () {
@@ -80,13 +81,13 @@ let checkWin = function () {
         }
     }
     let spots = [L, M, R, top, middle, bottom, DL, DR];
+    let wordSpots = [`L`, `M`, `R`, `top`, `middle`, `bottom`, `DL`, `DR`];
     for (let i = 0; i < spots.length; i++) {
         if (spots[i] == 3) {
-                let spotList = document.getElementsByClassName(spots[i]);
-                for (let j = 0; j < spotList.length; j++) {
-                    spotList[i].classList.add(`winnerRowColor`)
-                    console.log(spotList[i]);
-                }
+            let spotselemList = document.getElementsByClassName(wordSpots[i]);
+            for(let j = 0; j < spotselemList.length; j++){
+                spotselemList[j].classList.add(`winnerRowColor`)
+            }
             }
     };
     if ((L == 3) || (M == 3) || (R == 3) || (top == 3) || (middle == 3) || (bottom == 3) || (DL == 3) || (DR == 3)) {
@@ -96,6 +97,7 @@ let checkWin = function () {
     };
 
 };
+
 
 let win = () => {
     if (turn == 0) {

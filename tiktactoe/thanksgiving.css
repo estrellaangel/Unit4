@@ -314,3 +314,7 @@ a#themeButton{
         text-decoration: none;
     }
 }
+
+.winnerRowColor{
+    background-color: black;
+}
