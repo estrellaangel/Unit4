@@ -47,7 +47,7 @@ header{
 .square{
     height: 100px;
     width: 100px;
-    background-color: rgb(253, 255, 144);
+    background-color: rgb(255, 249, 197);
     border: 1px black solid;
 }
 
@@ -208,7 +208,7 @@ a#themeButton{
     .square{
         height: 75px;
         width: 75px;
-        background-color: rgb(253, 255, 144);
+        background-color: rgb(255, 249, 197);
         border: 1px black solid;
     }
     
@@ -299,4 +299,8 @@ a#themeButton{
         text-shadow: none;
         text-decoration: none;
     }
+}
+
+.winnerRowColor{
+    background-color: white;
 }

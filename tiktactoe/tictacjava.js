@@ -128,6 +128,7 @@ function reset() {
     for (let item = 0; item < positions.length; item++) {
         document.getElementById(positions[item]).classList.remove(`X`);
         document.getElementById(positions[item]).classList.remove(`O`);
+        document.getElementById(positions[item]).classList.remove(`winnerRowColor`)
     }
     console.log(`something`)
 
