@@ -9,6 +9,7 @@ let xWins = 0;
 let oWins = 0;
 
 let winningRow = [];
+let winningDecision = 0;
 
 
 document.getElementById("button").onclick = function () {
@@ -16,6 +17,9 @@ document.getElementById("button").onclick = function () {
 }
 
 let chooseSpot = function (spot) {
+    if(winningDecision == 1){
+        return;
+    }
     if (document.getElementById(spot).classList.contains(`X`)) {
         return;
     }
@@ -100,6 +104,7 @@ let checkWin = function () {
 
 
 let win = () => {
+    winningDecision++;
     if (turn == 0) {
         xWins++;
         document.getElementById("XWins").textContent = `X Wins: ${xWins}`;
@@ -120,6 +125,7 @@ let noOneWins = () => {
 }
 
 function reset() {
+    winningDecision--;
     turn = 0;
     count = 1;
     sign = "X";

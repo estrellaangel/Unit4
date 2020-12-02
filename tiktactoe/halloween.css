@@ -172,6 +172,7 @@ a#themeButton{
     }
     
     body{
+        font-family: 'Creepster', cursive;
         display: grid;
         grid-template-rows: auto;
         grid-template-columns: auto;
